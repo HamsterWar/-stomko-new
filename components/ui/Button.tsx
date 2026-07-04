@@ -13,9 +13,9 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-br from-[#4BA9D9] via-[#2680B3] to-[#1C5F87] text-white shadow-[0_12px_32px_rgba(38,128,179,0.32),0_4px_12px_rgba(38,128,179,0.18)] hover:shadow-[0_18px_42px_rgba(38,128,179,0.42),0_6px_16px_rgba(38,128,179,0.24)] hover:brightness-110",
+    "btn-sheen bg-gradient-to-br from-[#4BA9D9] via-[#2680B3] to-[#1C5F87] text-white shadow-[0_12px_32px_rgba(38,128,179,0.32),0_4px_12px_rgba(38,128,179,0.18)] hover:shadow-[0_18px_42px_rgba(38,128,179,0.42),0_6px_16px_rgba(38,128,179,0.24)] hover:brightness-105 hover:-translate-y-0.5",
   accent:
-    "bg-gradient-to-br from-[#FF8C6B] via-[#FF7A59] to-[#EA5A3A] text-white shadow-[0_12px_32px_rgba(255,122,89,0.32),0_4px_12px_rgba(255,122,89,0.18)] hover:shadow-[0_18px_42px_rgba(255,122,89,0.45),0_6px_16px_rgba(255,122,89,0.28)] hover:brightness-110",
+    "btn-sheen bg-gradient-to-br from-[#8DCB5A] via-[#6CB33F] to-[#4F8A2C] text-white shadow-[0_12px_32px_rgba(108,179,63,0.3),0_4px_12px_rgba(108,179,63,0.16)] hover:shadow-[0_18px_42px_rgba(108,179,63,0.4),0_6px_16px_rgba(108,179,63,0.24)] hover:brightness-105 hover:-translate-y-0.5",
   ghost:
     "bg-white text-brand-deep border border-[rgba(38,128,179,0.18)] hover:border-[rgba(38,128,179,0.35)] hover:bg-[rgba(38,128,179,0.04)]",
   glass:

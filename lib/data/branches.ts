@@ -22,7 +22,7 @@ export const branches: Branch[] = [
     telegram: "https://t.me/optimalniyvybor_sokol",
     hours: { weekdays: "Пн–Пт 09:00–21:00", saturday: "Сб 09:00–18:00", sunday: "Вс — выходной" },
     yandexMaps: "https://yandex.ru/maps/?text=Ленинградский+проспект+77+к4",
-    gradient: "from-cyan-500 to-teal-600",
+    gradient: "from-[#4BA9D9] to-[#2680B3]",
   },
   {
     slug: "belomorskaya",
@@ -34,6 +34,6 @@ export const branches: Branch[] = [
     telegram: "https://t.me/optimalniyvybor_belom",
     hours: { weekdays: "Пн–Пт 09:00–21:00", saturday: "Сб 09:00–18:00", sunday: "Вс — выходной" },
     yandexMaps: "https://yandex.ru/maps/?text=Беломорская+26",
-    gradient: "from-teal-500 to-cyan-600",
+    gradient: "from-[#2680B3] to-[#144264]",
   },
 ];

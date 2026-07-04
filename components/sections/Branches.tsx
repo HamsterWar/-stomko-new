@@ -29,37 +29,17 @@ export function Branches() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="group relative overflow-hidden rounded-3xl bg-white border border-[rgba(38,128,179,0.1)] shadow-[var(--shadow-glass-sm)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glass-lg)]"
+              className="group relative overflow-hidden rounded-3xl bg-white border border-[#e3edf5] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_48px_rgba(20,66,100,0.1)]"
             >
-              <div className={cn("relative h-44 bg-gradient-to-br overflow-hidden", b.gradient)}>
+              <div className={cn("relative h-36 bg-gradient-to-br overflow-hidden", b.gradient)}>
                 <div
-                  className="absolute inset-0 opacity-30"
+                  className="absolute inset-0 opacity-25"
                   style={{
                     backgroundImage:
-                      "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.5) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(255,255,255,0.3) 0%, transparent 50%)",
+                      "radial-gradient(circle at 80% 20%, rgba(255,255,255,0.35) 0%, transparent 55%)",
                   }}
                   aria-hidden="true"
                 />
-                <svg
-                  viewBox="0 0 400 200"
-                  className="absolute inset-0 h-full w-full opacity-30"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M0 130 Q 100 110, 200 130 T 400 130 L 400 200 L 0 200 Z"
-                    fill="white"
-                    opacity="0.2"
-                  />
-                  <path
-                    d="M0 150 Q 80 140, 160 150 T 320 150 T 400 150 L 400 200 L 0 200 Z"
-                    fill="white"
-                    opacity="0.15"
-                  />
-                  <circle cx="80" cy="80" r="3" fill="white" opacity="0.8" />
-                  <circle cx="200" cy="60" r="3" fill="white" opacity="0.8" />
-                  <circle cx="320" cy="90" r="3" fill="white" opacity="0.8" />
-                  <path d="M80 80 L 200 60 L 320 90" stroke="white" strokeWidth="1" opacity="0.4" fill="none" />
-                </svg>
                 <div className="absolute left-5 bottom-5 right-5 flex items-end justify-between">
                   <div className="text-white">
                     <div className="text-xs font-semibold uppercase tracking-wider opacity-80">

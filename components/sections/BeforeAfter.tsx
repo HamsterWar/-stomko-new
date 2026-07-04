@@ -7,24 +7,24 @@ import { cn } from "@/lib/utils/cn";
 
 const cases = [
   {
-    title: "Восстановление улыбки винирами",
-    doctor: "Антон Егоров",
+    title: "Восстановление улыбки коронками",
+    doctor: "Роман Марков",
     duration: "3 визита · 2 недели",
-    accent: "from-amber-400 to-orange-400",
+    accent: "from-[#4BA9D9] to-[#2680B3]",
     beforeColor: "#9CA3AF",
     afterColor: "#FAFAFA",
   },
   {
     title: "Имплантация двух жевательных зубов",
-    doctor: "Роман Марков",
+    doctor: "Антон Егоров",
     duration: "4 месяца",
-    accent: "from-[#4BA9D9] to-[#1C5F87]",
+    accent: "from-[#2680B3] to-[#144264]",
     beforeColor: "#94A3B8",
     afterColor: "#F1F5F9",
   },
   {
-    title: "Профессиональная чистка + отбеливание Zoom 4",
-    doctor: "Юлия Башкирова",
+    title: "Профессиональная чистка и отбеливание",
+    doctor: "Юлия Кибенко",
     duration: "1 визит · 90 минут",
     accent: "from-[#8DCB5A] to-[#4F8A2C]",
     beforeColor: "#D1B583",
@@ -39,11 +39,11 @@ function ToothMockup({ tone, smile }: { tone: string; smile: number }) {
       <rect width="320" height="200" fill="url(#mouthBg)" />
       <defs>
         <linearGradient id="mouthBg" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#fde2e4" />
-          <stop offset="100%" stopColor="#fbc4d1" />
+          <stop offset="0%" stopColor="#dfe9f2" />
+          <stop offset="100%" stopColor="#c3d5e4" />
         </linearGradient>
       </defs>
-      <ellipse cx="160" cy="100" rx="120" ry="50" fill="#fbcfe8" opacity="0.4" />
+      <ellipse cx="160" cy="100" rx="120" ry="50" fill="#b0c6d9" opacity="0.35" />
       {teeth.map((_, i) => {
         const x = 50 + i * 32;
         return (
@@ -87,7 +87,7 @@ export function BeforeAfter() {
           transition={{ duration: 0.5 }}
           className="mt-12 grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center"
         >
-          <div className="relative overflow-hidden rounded-3xl border border-[rgba(38,128,179,0.12)] shadow-[var(--shadow-glass-lg)] aspect-[16/10] bg-pink-100 select-none">
+          <div className="relative overflow-hidden rounded-3xl border border-[#e3edf5] shadow-[0_20px_48px_rgba(20,66,100,0.12)] aspect-[16/10] bg-[#dfe9f2] select-none">
             <div className="absolute inset-0">
               <ToothMockup tone={current.afterColor} smile={current.title.includes("импланта") ? 2 : 0} />
             </div>
@@ -116,10 +116,10 @@ export function BeforeAfter() {
               </div>
             </div>
 
-            <div className="pointer-events-none absolute left-3 top-3 rounded-full bg-rose-500/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-white">
+            <div className="pointer-events-none absolute left-3 top-3 rounded-full bg-[#144264]/85 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-white">
               ДО
             </div>
-            <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-emerald-500/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-white">
+            <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-[#6CB33F]/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-white">
               ПОСЛЕ
             </div>
             <p className="absolute bottom-3 left-3 right-3 text-center text-[11px] text-white/80 bg-brand-deep/40 backdrop-blur-sm rounded-full py-1.5">

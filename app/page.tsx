@@ -1,5 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
+import { Promos } from "@/components/sections/Promos";
+import { StatsBand } from "@/components/sections/StatsBand";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { PricingTeaser } from "@/components/sections/PricingTeaser";
 import { DoctorsCarousel } from "@/components/sections/DoctorsCarousel";
@@ -20,7 +22,9 @@ export default function HomePage() {
       />
       <Hero />
       <TrustBar />
+      <Promos />
       <ServicesGrid />
+      <StatsBand />
       <PricingTeaser />
       <DoctorsCarousel />
       <WhyUs />

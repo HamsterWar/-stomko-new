@@ -9,6 +9,7 @@ import { useBookingModal } from "@/components/conversion/BookingModalContext";
 import { cn } from "@/lib/utils/cn";
 
 const navItems = [
+  { href: "#akcii", label: "Акции" },
   { href: "#uslugi", label: "Услуги" },
   { href: "#vrachi", label: "Врачи" },
   { href: "#tseny", label: "Цены" },
@@ -31,18 +32,13 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-3 top-3 z-50 mx-auto max-w-7xl transition-all duration-300 sm:inset-x-4 sm:top-4",
-        scrolled && "sm:top-3"
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300 border-b backdrop-blur-md",
+        scrolled
+          ? "bg-white/95 border-[#e8f1f7] shadow-[0_8px_30px_rgba(20,66,100,0.06)]"
+          : "bg-white/70 border-transparent"
       )}
     >
-      <div
-        className={cn(
-          "flex items-center justify-between gap-4 rounded-2xl px-3 py-2.5 sm:px-5 sm:py-3 transition-all duration-300",
-          scrolled
-            ? "glass-strong shadow-[var(--shadow-glass-md)]"
-            : "glass shadow-[var(--shadow-glass-sm)]"
-        )}
-      >
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 sm:px-8 sm:py-3.5">
         <Link href="/" aria-label="На главную">
           <Logo />
         </Link>
@@ -89,7 +85,7 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="mt-2 rounded-2xl glass-strong p-3 lg:hidden">
+        <div className="border-t border-[#e8f1f7] bg-white p-3 lg:hidden">
           <nav className="flex flex-col">
             {navItems.map((item) => (
               <a

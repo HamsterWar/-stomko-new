@@ -18,8 +18,7 @@ export function Reviews() {
   };
 
   return (
-    <section id="otzyvy" className="relative py-20 sm:py-28">
-      <div className="absolute inset-x-0 top-0 h-96 bg-mesh-aqua opacity-50" aria-hidden="true" />
+    <section id="otzyvy" className="relative py-20 sm:py-28 bg-section-light">
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:items-end">
           <SectionTitle
@@ -34,7 +33,7 @@ export function Reviews() {
             {reviewStats.sources.map((s) => (
               <div
                 key={s.name}
-                className="rounded-2xl glass-strong p-4 text-center"
+                className="rounded-2xl bg-white border border-[#e3edf5] p-4 text-center"
               >
                 <div className="flex items-center justify-center gap-0.5">
                   <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
@@ -52,7 +51,7 @@ export function Reviews() {
             type="button"
             aria-label="Назад"
             onClick={() => scroll(-1)}
-            className="flex h-11 w-11 items-center justify-center rounded-xl glass-strong border border-[rgba(38,128,179,0.18)] text-brand-deep hover:bg-white cursor-pointer"
+            className="flex h-11 w-11 items-center justify-center rounded-xl bg-white border border-[#e3edf5] text-brand-deep hover:border-brand-primary/40 cursor-pointer"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -60,7 +59,7 @@ export function Reviews() {
             type="button"
             aria-label="Вперёд"
             onClick={() => scroll(1)}
-            className="flex h-11 w-11 items-center justify-center rounded-xl glass-strong border border-[rgba(38,128,179,0.18)] text-brand-deep hover:bg-white cursor-pointer"
+            className="flex h-11 w-11 items-center justify-center rounded-xl bg-white border border-[#e3edf5] text-brand-deep hover:border-brand-primary/40 cursor-pointer"
           >
             <ChevronRight className="h-5 w-5" />
           </button>
@@ -77,7 +76,7 @@ export function Reviews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.35, delay: (i % 3) * 0.06 }}
-              className="relative w-[320px] shrink-0 snap-start rounded-3xl bg-white border border-[rgba(38,128,179,0.1)] p-6 shadow-[var(--shadow-glass-sm)] sm:w-[380px]"
+              className="relative w-[320px] shrink-0 snap-start rounded-3xl bg-white border border-[#e3edf5] p-6 sm:w-[380px]"
             >
               <div className="flex items-center gap-3">
                 <div className={cn("flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br text-white font-display font-bold", r.accent)}>

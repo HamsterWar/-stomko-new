@@ -105,8 +105,8 @@ export function Tooth3D({ className }: { className?: string }) {
           transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
           style={{ transformOrigin: "335px 280px" }}
         >
-          <circle cx="335" cy="280" r="8" fill="#FF7A59" opacity="0.6" />
-          <circle cx="335" cy="280" r="3.5" fill="#FF7A59" />
+          <circle cx="335" cy="280" r="8" fill="#6CB33F" opacity="0.6" />
+          <circle cx="335" cy="280" r="3.5" fill="#6CB33F" />
         </motion.g>
       </svg>
     </motion.div>

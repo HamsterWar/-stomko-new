@@ -113,9 +113,7 @@ export function BookingModal() {
       "lechenie-zubov": ["Терапия", "Эндодонтия"],
       hirurgiya: ["Хирургия"],
       protezirovanie: ["Протезирование"],
-      ortodontiya: ["Ортодонтия"],
-      "gigiena-otbelivanie": ["Гигиена"],
-      "detskaya-stomatologiya": ["Детская стоматология"],
+      "gigiena-otbelivanie": ["Гигиена", "Терапия"],
       diagnostika: ["Терапия", "Имплантация"],
     };
     const need = map[svc.slug] ?? [];

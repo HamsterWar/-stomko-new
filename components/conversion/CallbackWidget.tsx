@@ -38,10 +38,10 @@ export function CallbackWidget() {
         className="fixed bottom-20 right-4 z-40 md:bottom-6 md:right-6 group cursor-pointer"
       >
         <span
-          className={`absolute inset-0 rounded-full bg-gradient-to-br from-[#FF8C6B] to-[#EA5A3A] ${pulse ? "motion-safe:animate-ping" : ""}`}
+          className={`absolute inset-0 rounded-full bg-gradient-to-br from-[#8DCB5A] to-[#4F8A2C] ${pulse ? "motion-safe:animate-ping" : ""}`}
           style={{ animationDuration: "1.6s" }}
         />
-        <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#FF8C6B] to-[#EA5A3A] text-white shadow-[0_12px_32px_rgba(255,122,89,0.42)] transition-transform group-hover:scale-105">
+        <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#8DCB5A] to-[#4F8A2C] text-white shadow-[0_12px_32px_rgba(108,179,63,0.4)] transition-transform group-hover:scale-105">
           <PhoneCall className="h-6 w-6" />
         </span>
       </button>
@@ -78,14 +78,14 @@ export function CallbackWidget() {
 
               {!sent ? (
                 <>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#FF8C6B] to-[#EA5A3A] text-white shadow-[0_8px_22px_rgba(255,122,89,0.32)]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8DCB5A] to-[#4F8A2C] text-white shadow-[0_8px_22px_rgba(108,179,63,0.3)]">
                     <PhoneCall className="h-6 w-6" />
                   </div>
                   <h3 className="mt-4 font-display text-xl font-bold text-brand-deep">
                     Перезвоним за 30 секунд
                   </h3>
                   <p className="mt-1.5 text-sm text-text-muted">
-                    Оставьте номер — администратор Анна перезвонит и ответит на все вопросы.
+                    Оставьте номер — администратор клиники перезвонит и ответит на все вопросы.
                   </p>
                   <input
                     type="tel"

@@ -26,15 +26,16 @@ export function SectionTitle({
       {eyebrow && (
         <div
           className={cn(
-            "inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-primary mb-5",
+            "inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-brand-primary mb-5",
             align === "center" && "mx-auto"
           )}
         >
-          <span className="block h-1.5 w-1.5 rounded-full bg-brand-accent animate-[pulse-soft_2.4s_ease-in-out_infinite]" />
+          <span className="block h-px w-8 bg-brand-primary/50" aria-hidden="true" />
           {eyebrow}
+          {align === "center" && <span className="block h-px w-8 bg-brand-primary/50" aria-hidden="true" />}
         </div>
       )}
-      <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight">
+      <h2 className="font-display text-3xl sm:text-4xl lg:text-[44px] font-bold leading-[1.08] tracking-tight">
         {title.split("|").map((part, i) =>
           i % 2 === 0 ? (
             <span key={i}>{part}</span>

@@ -19,7 +19,7 @@ export function StickyMobileBar() {
         <button
           type="button"
           onClick={() => openBooking()}
-          className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-[#FF8C6B] via-[#FF7A59] to-[#EA5A3A] py-3 text-sm font-semibold text-white cursor-pointer"
+          className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-[#8DCB5A] via-[#6CB33F] to-[#4F8A2C] py-3 text-sm font-semibold text-white cursor-pointer"
         >
           <CalendarPlus className="h-4 w-4" />
           Записаться

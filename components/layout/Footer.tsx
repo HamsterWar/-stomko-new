@@ -24,11 +24,11 @@ export function Footer() {
             <Logo variant="onDark" />
             <p className="mt-5 text-sm leading-relaxed text-white/70 max-w-sm">
               Сеть стоматологических клиник «Оптимальный выбор» в Москве с 1995 года. Имплантация,
-              лечение, протезирование, детская стоматология у метро Сокол и Беломорская.
+              лечение зубов, протезирование и хирургия у метро Сокол и Беломорская.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              <span className="rounded-full bg-white/10 px-3 py-1 text-xs">Лицензия ЛО-77-01</span>
-              <span className="rounded-full bg-white/10 px-3 py-1 text-xs">EN ISO 17665</span>
+              <span className="rounded-full bg-white/10 px-3 py-1 text-xs">Лицензированная клиника</span>
+              <span className="rounded-full bg-white/10 px-3 py-1 text-xs">Полный цикл стерилизации</span>
               <span className="rounded-full bg-white/10 px-3 py-1 text-xs">30 лет опыта</span>
             </div>
           </div>
@@ -40,12 +40,12 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5">
               {services.slice(0, 6).map((s) => (
                 <li key={s.slug}>
-                  <Link
-                    href={`/uslugi/${s.slug}`}
+                  <a
+                    href="#uslugi"
                     className="text-sm text-white/70 hover:text-white transition-colors cursor-pointer"
                   >
                     {s.title}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -56,12 +56,11 @@ export function Footer() {
               Информация
             </h3>
             <ul className="mt-4 space-y-2.5">
-              <li><Link href="/o-klinike" className="text-sm text-white/70 hover:text-white cursor-pointer">О клинике</Link></li>
-              <li><Link href="/vrachi" className="text-sm text-white/70 hover:text-white cursor-pointer">Врачи</Link></li>
-              <li><Link href="/tseny" className="text-sm text-white/70 hover:text-white cursor-pointer">Цены</Link></li>
-              <li><Link href="/aktsii" className="text-sm text-white/70 hover:text-white cursor-pointer">Акции</Link></li>
-              <li><Link href="/otzyvy" className="text-sm text-white/70 hover:text-white cursor-pointer">Отзывы</Link></li>
-              <li><Link href="/kontakty" className="text-sm text-white/70 hover:text-white cursor-pointer">Контакты</Link></li>
+              <li><a href="#akcii" className="text-sm text-white/70 hover:text-white cursor-pointer">Акции</a></li>
+              <li><a href="#vrachi" className="text-sm text-white/70 hover:text-white cursor-pointer">Врачи</a></li>
+              <li><a href="#tseny" className="text-sm text-white/70 hover:text-white cursor-pointer">Цены</a></li>
+              <li><a href="#otzyvy" className="text-sm text-white/70 hover:text-white cursor-pointer">Отзывы</a></li>
+              <li><a href="#filialy" className="text-sm text-white/70 hover:text-white cursor-pointer">Контакты</a></li>
             </ul>
           </div>
 

@@ -14,7 +14,6 @@ export function ServicesGrid() {
 
   return (
     <section id="uslugi" className="relative py-20 sm:py-28">
-      <div className="absolute inset-x-0 top-0 h-96 bg-mesh-aqua opacity-70" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <SectionTitle
           eyebrow="Направления"
@@ -36,20 +35,12 @@ export function ServicesGrid() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.4, delay: (i % 4) * 0.06 }}
                 className={cn(
-                  "group relative overflow-hidden rounded-3xl bg-white border border-[rgba(38,128,179,0.1)] p-6 text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glass-lg)] cursor-pointer",
+                  "group relative overflow-hidden rounded-3xl bg-white border border-[#e3edf5] p-6 text-left transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/35 hover:shadow-[0_20px_48px_rgba(20,66,100,0.1)] cursor-pointer",
                   isLarge && "lg:col-span-2 lg:row-span-1"
                 )}
               >
-                <div
-                  className={cn(
-                    "absolute -right-12 -top-12 h-44 w-44 rounded-full opacity-25 blur-2xl transition-opacity duration-300 group-hover:opacity-50 bg-gradient-to-br",
-                    s.gradient
-                  )}
-                  aria-hidden="true"
-                />
-
                 <div className="relative">
-                  <div className={cn("flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br text-brand-primary shadow-[var(--shadow-glass-sm)]", s.gradient)}>
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#eaf4fa] text-brand-primary transition-colors duration-300 group-hover:bg-gradient-to-br group-hover:from-[#4BA9D9] group-hover:to-[#2680B3] group-hover:text-white">
                     {Icon && <Icon className="h-7 w-7" />}
                   </div>
 
@@ -82,10 +73,10 @@ export function ServicesGrid() {
                           от {s.priceFrom.toLocaleString("ru-RU")} ₽
                         </span>
                       ) : (
-                        <span className="font-semibold text-emerald-600 text-base">Бесплатно</span>
+                        <span className="font-semibold text-brand-green-deep text-base">Бесплатно</span>
                       )}
                     </div>
-                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#4BA9D9]/15 to-[#2680B3]/10 text-brand-primary transition-transform group-hover:translate-x-1">
+                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#eaf4fa] text-brand-primary transition-transform group-hover:translate-x-1">
                       <ArrowRight className="h-4 w-4" />
                     </span>
                   </div>

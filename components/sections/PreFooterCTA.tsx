@@ -53,18 +53,18 @@ export function PreFooterCTA() {
                 <br /> и план лечения — <span className="text-sky-200">бесплатно</span>
               </h2>
               <p className="mt-4 text-base text-white/80 max-w-lg leading-relaxed">
-                Оставьте телефон — администратор Анна перезвонит за 5 минут, подберёт удобное время
-                и напомнит за день до визита.
+                Оставьте телефон — администратор клиники перезвонит за 5 минут, подберёт удобное
+                время и напомнит за день до визита.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
                 <div className="flex items-center gap-2 text-white/85">
                   <ShieldCheck className="h-4 w-4 text-sky-200" />
-                  Гарантия 5 лет
+                  30 лет опыта
                 </div>
                 <div className="flex items-center gap-2 text-white/85">
                   <ShieldCheck className="h-4 w-4 text-sky-200" />
-                  Рассрочка 0%
+                  Скидка 10% постоянным пациентам
                 </div>
                 <div className="flex items-center gap-2 text-white/85">
                   <ShieldCheck className="h-4 w-4 text-sky-200" />

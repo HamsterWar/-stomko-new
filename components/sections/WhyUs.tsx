@@ -10,12 +10,12 @@ export function WhyUs() {
   const reduced = useReducedMotion();
 
   return (
-    <section className="relative py-20 sm:py-28 bg-gradient-to-b from-transparent via-[#EEF7FC]/60 to-transparent">
+    <section className="relative py-20 sm:py-28 bg-section-light">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionTitle
           eyebrow="Почему мы"
           title="4 причины выбрать |«Оптимальный выбор»|"
-          subtitle="Мы помогли 28 000+ пациентам с 1995 года. Вот что отличает нас от других клиник."
+          subtitle="Мы работаем с 1995 года, и 85% пациентов приходят к нам по рекомендации. Вот что отличает нас от других клиник."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
@@ -28,20 +28,12 @@ export function WhyUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.4, delay: (i % 2) * 0.08 }}
-                className="group relative overflow-hidden rounded-3xl bg-white border border-[rgba(38,128,179,0.1)] p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glass-lg)]"
+                className="group relative overflow-hidden rounded-3xl bg-white border border-[#e3edf5] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/30 hover:shadow-[0_20px_48px_rgba(20,66,100,0.1)]"
               >
-                <div
-                  className={cn(
-                    "absolute -right-16 -top-16 h-52 w-52 rounded-full opacity-25 blur-3xl bg-gradient-to-br transition-opacity duration-300 group-hover:opacity-50",
-                    item.accent
-                  )}
-                  aria-hidden="true"
-                />
-
                 <div className="relative">
                   <div
                     className={cn(
-                      "flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br text-white shadow-[var(--shadow-glass-md)]",
+                      "flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br text-white",
                       item.accent
                     )}
                   >

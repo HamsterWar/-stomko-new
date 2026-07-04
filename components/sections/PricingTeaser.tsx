@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, BadgePercent } from "lucide-react";
 import { priceTeasers } from "@/lib/data/services";
@@ -26,12 +25,6 @@ export function PricingTeaser() {
             style={{ background: "radial-gradient(circle, #4BA9D9 0%, transparent 70%)" }}
             aria-hidden="true"
           />
-          <div
-            className="absolute -bottom-32 -left-10 h-80 w-80 rounded-full opacity-25 blur-3xl"
-            style={{ background: "radial-gradient(circle, #6CB33F 0%, transparent 70%)" }}
-            aria-hidden="true"
-          />
-
           <div className="relative grid items-center gap-7 lg:grid-cols-[1fr_1.3fr]">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-sky-200">
@@ -42,19 +35,19 @@ export function PricingTeaser() {
                 Честные цены —<br /> без скрытых платежей
               </h2>
               <p className="mt-3 text-sm text-white/75 max-w-md sm:text-base">
-                План лечения с фиксированной стоимостью утверждается до начала. Возможна рассрочка
-                0% до 12 месяцев.
+                План лечения с фиксированной стоимостью утверждается до начала. Постоянным
+                пациентам — скидка 10% на все услуги.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Button variant="accent" size="md" onClick={() => openBooking()}>
                   Узнать стоимость лечения
                 </Button>
-                <Link href="/tseny">
+                <a href="#akcii">
                   <Button variant="glass" size="md">
-                    Полный прайс
+                    Акции и скидки
                     <ArrowRight className="h-4 w-4" />
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
 
